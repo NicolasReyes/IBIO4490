@@ -179,7 +179,7 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 1. What is the ``grep``command?
 
-- ''grep'' command (``global regular expression and print``), is used to look for inside of the directories the lines that match a pattern. By default, the command prints the lines found in the standard output, that means, it can be seemed directly on the screen.
+- ''grep'' command (``global regular expression and print``), is used to look for inside of the directories, lines that match a pattern. By default, the command prints the lines found in the standard output, that means, it can be seemed directly on the screen.
 
 The basic syntax is: ``$grep "pattern" [Filename]``
 
