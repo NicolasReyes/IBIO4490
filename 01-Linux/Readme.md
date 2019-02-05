@@ -215,7 +215,20 @@ There are other options to complement ``grep`` command:
 
 	2. Khan, A. (n.d.). Introducción a la señalización celular. Retrieved from https://es.khanacademy.org/science/biology/cell-signaling/mechanisms-of-cell-signaling/a/introduction-to-cell-signaling
 
+
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
+
+- The structure ``#!/bin/python`` at the beginning of scripts, it's a shebang for your command line about how it should interpreter a script. (1)
+
+A shebang, also known as sha-bang, hashbang, pound-bang, or hash-pling, is the character sequence of (#!) at the beginning of a script, its function is to convert a file of Python code into an executable program. The operating system uses ``#!/bin/python`` (shebang) to find an appropriate program for running the code along all the time, in this case, to execute using Python. (2,3)
+
+### Bibliography: 
+	1. Wikipedia. (n.d.). Shebang (Unix).
+
+	2. Lutz, M. (n.d.). Learning Python (4th ed.). O’REILLY.
+
+	3. Thoma, M. (n.d.). What does #!/usr/bin/python mean? Retrieved February 5, 2019, from https://martin-thoma.com/what-does-usrbinpython-mean/
+		
 
 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
  
