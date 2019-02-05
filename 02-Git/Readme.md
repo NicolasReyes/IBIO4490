@@ -200,7 +200,7 @@ See a more complete list at https://git-scm.com/downloads/guis
 8. Since you have kindly shared your **username** with me, I (Andrés) will clone your repo and put you a grade. 
 
 # Deadline 
-**February 6 11:59 pm, (it is the same as the first lab)**. Weekly, I will clone your repository for every lab. Please try to keep you repo as light as possible, as to heavy files are cumbersome to push/clone.
+**February 6 11:59 pm, (it is the same as the first lab)**. Weekly, I will clone your repository for every lab. Please try to keep you repo as light as possible, as to heavy files are cumbersome to push/clone
 
    
 
