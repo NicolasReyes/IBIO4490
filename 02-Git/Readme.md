@@ -45,7 +45,7 @@
 - Commit: Write changes to local repository
 - Checkout: Move to another point in the revision tree
 - Diff: Compare two points in the tree
-- Log: Review history
+- Log: Review history.
 
 
 ## Working with multiple repositories
