@@ -191,6 +191,7 @@ The basic syntax is: ``$grep "pattern" [Filename]``
 There are other options to complement ``grep`` command:
 
 -``c`` Instead of printing the lines that match, it shows the number of lines that match.
+
 -``e`` Allows us to specify several search patterns.
 -``r`` Searches recursively within all subdirectories of the current directory.
 -``v`` Shows us the lines that do not match the desired pattern.
