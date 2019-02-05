@@ -174,7 +174,20 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 ## Your turn
 
+## SOLUTION
+
+
 1. What is the ``grep``command?
+
+- ''grep'' command (``global regular expression and print``), is used to look for inside of the directories the lines that match a pattern. By default, the command prints the lines found in the standard output, that means, it can be seemed directly on the screen.
+
+The general syntax is: ``$grep "pattern" [Filename]``
+
+### Example: Search all the words that start with "e" inside of a file named "Uniandes"
+
+   ```bash
+   grep "e*" Uniandes
+   ```
 
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
 
