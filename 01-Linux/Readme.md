@@ -210,7 +210,8 @@ There are other options to complement ``grep`` command:
 
 -``H`` Prints the name of the file with each match.
 
-###Bibliography: 1. El comando grep. (n.d.). Retrieved February 5, 2019, from http://nereida.deioc.ull.es/~pcgull/ihiu01/cdrom/unix/unix1/contenido/node74.html
+### Bibliography: 1. El comando grep. (n.d.). Retrieved February 5, 2019, from http://nereida.deioc.ull.es/~pcgull/ihiu01/cdrom/unix/unix1/contenido/node74.html
+
 2. Khan, A. (n.d.). Introducción a la señalización celular. Retrieved from https://es.khanacademy.org/science/biology/cell-signaling/mechanisms-of-cell-signaling/a/introduction-to-cell-signaling
 
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
