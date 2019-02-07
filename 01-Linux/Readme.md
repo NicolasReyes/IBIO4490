@@ -231,7 +231,31 @@ A shebang, also known as sha-bang, hashbang, pound-bang, or hash-pling, is the c
 		
 
 ### 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
+
+I work in Mac OS system, so at first instance ``wget`` must be installed. This command is not by default. There are different ways to install ``wget``on Mac OS (1), However, the easier is to implemnet a very useful tool called ``Homebrew``. `This is a free and open source software ``package management system`` that helps with the installation of different software on Apple's macOS operating system and Linux (2). This tool has been used widely in ``GitHub''. ``Homebrew`` had the largest number of new contributors on GitHub (3).  
  
+Following, this is the structure to install ´´Homebrew´´in Mac OS, according its creator, Max Howell (2).
+
+   ```bash
+   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+   ```
+After being installed ``Homebrew``, we can use it as the tool to install other packages as ``wget``:
+
+   ```bash
+	$brew install wget
+   ```
+And that's all, ``wget`` is already installed!.
+
+
+### Bibliography: 
+	1. HACKSPARROW. (n.d.). How to install wget on your Mac. Retrieved February 6, 2019, from https://www.hacksparrow.com/how-to-install-wget-on-your-mac.html
+
+	2. Howell, M. (n.d.). Homebrew. Retrieved February 6, 2019, from https://brew.sh/
+
+	3. Wikipedia. (n.d.). Homebrew (package management software).
+
+
 ### 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
  
 ### 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
