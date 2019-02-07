@@ -232,7 +232,7 @@ A shebang, also known as sha-bang, hashbang, pound-bang, or hash-pling, is the c
 
 ### 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
 
-I work in Mac OS system, so at first instance ``wget`` must be installed. This command is not by default. There are different ways to install ``wget``on Mac OS (1), However, the easier is to implemnet a very useful tool called ``Homebrew``. `This is a free and open source software ``package management system`` that helps with the installation of different software on Apple's macOS operating system and Linux (2). This tool has been used widely in ``GitHub''. ``Homebrew`` had the largest number of new contributors on GitHub (3).  
+I work on Mac OS system, so at first instance ``wget`` must be installed. This command isn't by default. There are different ways to install ``wget``on Mac OS (1), However, the easier is to implemnet a very useful tool called ``Homebrew``. `This is a free and open source software ``package management system`` that helps with the installation of different software on Apple's macOS operating system and Linux (2). This tool has been used widely in ``GitHub''. ``Homebrew`` had the largest number of new contributors on GitHub (3).  
  
 Following, this is the structure to install ´´Homebrew´´in Mac OS, according its creator, Max Howell (2).
 
