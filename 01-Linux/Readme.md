@@ -280,12 +280,12 @@ We can use the command ``du -sh *`` to get the size. `s` refers to show only the
    ```bash
 	$ du -sh BSR
    ```
-The result was: 72 MB
+The result was: **72 MB**
 
 
 ### b). Number of Images
 
-The form to find the number of images is using the command ``wc`` (Word Count). Depending of the use, there are some structures:
+The form to find the number of images is using the command ``wc`` (**Word Count**). Depending of the use, there are some structures:
 
 ``wc -l`` <file> number of lines
 
@@ -302,7 +302,7 @@ In our case, we can count the number of lines:
    ```bash
 	find . -type f | wc -l
    ```
-The result was: 500 Images
+The result was: **500 Images**
 
 ### Bibliography: 
 	1. Cantero, G. (n.d.). du Command. Retrieved February 7, 2019, from https://www.galisteocantero.com/como-ver-el-tamano-de-archivos-desde-la-consola-en-linux/
