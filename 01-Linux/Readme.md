@@ -272,6 +272,41 @@ After that, the file is decompressed (5):
 
 
 ### 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
+
+### a). Disk size of the uncompressed dataset
+
+We can use the command ``du -sh *`` to get the size. `s` refers to show only the information about size and `h` y to show them friendly. (1)
+
+   ```bash
+	$ du -sh BSR
+   ```
+The result was: 72 M
+
+
+### b). Number of Images
+
+The form to find the number of images is using the command ``wc`` (Word Count). Depending of the use, there are some structures:
+
+    ``wc -l`` <file> number of lines
+    ``wc -c`` <file> number of bytes
+    ``wc -m`` <file> prints the number of characters
+    ``wc -L`` <file> prints the length of the longest line
+    ``wc -w`` <file> prints the number of words
+
+In our case, we can count the number of lines:
+
+   ```bash
+	find . -type f | wc -l
+   ```
+The result was: 500 Images
+
+### Bibliography: 
+	1. Cantero, G. (n.d.). du Command. Retrieved February 7, 2019, from https://www.galisteocantero.com/como-ver-el-tamano-de-archivos-desde-la-consola-en-linux/
+
+
+
+
+
  
 ### 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
 
