@@ -280,18 +280,18 @@ We can use the command ``du -sh *`` to get the size. `s` refers to show only the
    ```bash
 	$ du -sh BSR
    ```
-The result was: 72 M
+The result was: 72 MB
 
 
 ### b). Number of Images
 
 The form to find the number of images is using the command ``wc`` (Word Count). Depending of the use, there are some structures:
 
-    ``wc -l`` <file> number of lines
-    ``wc -c`` <file> number of bytes
-    ``wc -m`` <file> prints the number of characters
-    ``wc -L`` <file> prints the length of the longest line
-    ``wc -w`` <file> prints the number of words
+``wc -l`` <file> number of lines
+``wc -c`` <file> number of bytes
+``wc -m`` <file> prints the number of characters
+``wc -L`` <file> prints the length of the longest line
+``wc -w`` <file> prints the number of words
 
 In our case, we can count the number of lines:
 
