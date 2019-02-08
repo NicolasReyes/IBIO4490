@@ -357,7 +357,7 @@ As we can saw in the last question, there are 2 kind of images. The first is a l
 ### b) Portrait
 
    ```bash
-	find . -name "*jpg" -exec identify -format " %wx%h\n" {} \; | grep '481x321' | wc -l
+	find . -name "*jpg" -exec identify -format " %wx%h\n" {} \; | grep '321x481' | wc -l
    ```	 
 **Answer = 152**
 
