@@ -275,7 +275,7 @@ After that, the file is decompressed (5):
 
 ### a). Disk size of the uncompressed dataset
 
-We can use the command ``du -sh *`` to get the size. `s` refers to show only the information about size and `h` y to show them friendly. (1)
+We can use the command ``du -sh *`` to get the size. `s` refers to show only the information about size and `h` y to show them friendly (1). The uncompressed dataset was **BSR**, so the code sintaxis is:
 
    ```bash
 	$ du -sh BSR
@@ -285,7 +285,7 @@ The result was: **72 MB**
 
 ### b). Number of Images
 
-The form to find the number of images is using the command ``wc`` (**Word Count**). Depending of the use, there are some structures:
+The form to find the number of files is using the command ``wc`` (**Word Count**). Depending of the use, there are some structures:
 
 ``wc -l`` <file> number of lines
 
@@ -297,26 +297,87 @@ The form to find the number of images is using the command ``wc`` (**Word Count*
 
 ``wc -w`` <file> prints the number of words
 
-In our case, we can count the number of lines:
+In our case, we can have other files that are not images, so it's important to find only the images. The filter to search the images is the command ``find``. This command is a very powerful tool to find files and directories (2). 
+
+The sintaxis of find is:
 
    ```bash
-	find . -type f | wc -l
+	find [route] [expression of searching] [action]
+   ```
+There is another powerful command: ``-exec`` that lets implement other actions on the initial find, so in my case, i use the command ``identify`` from **ImageMagick** that describes the format and characteristics of one or more image files (3).  
+
+
+The code to find only the images from the route ``BSR/BSDS500/data/images``
+   ```bash
+	find . -name "*jpg" -exec identify {} \;| wc -l
    ```
 The result was: **500 Images**
 
 ### Bibliography: 
 	1. Cantero, G. (n.d.). du Command. Retrieved February 7, 2019, from https://www.galisteocantero.com/como-ver-el-tamano-de-archivos-desde-la-consola-en-linux/
 
+	2. Linuxtoal. (n.d.). Encuentra cualquier cosa en Linux con find. Retrieved February 7, 2019, from https://www.linuxtotal.com.mx/index.php?cont=info_admon_022
 
+	3. @ ImageMagick. (n.d.). Command-line Tools: Identify. Retrieved February 7, 2019, from https://imagemagick.org/script/identify.php
 
 
 
  
 ### 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
 
+The resolution can be understand as the total number of pixels in the image by rows and columns. According with the example showed in the section of **Format and Print Image Properties, formats** of **ImageMagick page (4)**, the code to find the resolution and format of the images is:
+
+   ```bash
+	find . -name "*jpg" -exec identify -format "%m:%f %wx%h" {} \;
+   ```
+The result was:
+
+   ```bash
+	481x321JPEG;
+	321x481JPEG
+   ```	 
+ 
+### Bibliography: 
+	1. ImageMagick. (n.d.). Format and Print Image Properties. Retrieved February 7, 2019, from https://imagemagick.org/script/escape.php
+
+
+
+
 ### 6. How many of them are in *landscape* orientation (opposed to *portrait*)? Tip: use ``awk`` and ``cut``
+
+As we can saw in the last question, there are 2 kind of images. The first is a landscape orientation of size 481x321 and the second one is a portrait orientation of size 321x481. 
+
+### a) Landscape
+
+   ```bash
+	find . -name "*jpg" -exec identify -format " %wx%h\n" {} \; | grep '481x321' | wc -l
+   ```	
+**Answer = 348**
+
+### b) Portrait
+
+   ```bash
+	find . -name "*jpg" -exec identify -format " %wx%h\n" {} \; | grep '481x321' | wc -l
+   ```	 
+**Answer = 152**
+
+
+
  
 ### 7. Crop all images to make them square (256x256) and save them in a different folder. Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
+
+At first, we have to create a new directory called ("Recortadas") where the new images are going to be saved. The code was:
+
+   ```bash
+	cp -r  Documents/IBIO4490/BSR/BSDS500/data/images  Documents/IBIO4490/Recortadas/
+   ```
+
+At second, with the command ``mortify`` of **ImageMagick** each image is cropped. It's important to use ``!`` to get the size exactly at 255x255. The code was: 
+
+   ```bash
+	mogrify -resize 256x256! *.jpg
+   ```
+
 
 
 # Report
