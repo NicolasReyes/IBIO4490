@@ -1,5 +1,5 @@
 import numpy as np
-import ipdb
+#import ipdb
 
 def padReflect(im,r):
 	impad = np.zeros(np.array(im.shape)+2*r);

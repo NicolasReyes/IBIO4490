@@ -3,6 +3,7 @@ import math
 import matplotlib.pyplot as plt
 import scipy.signal
 from isum import isum
+
 def oeFilter(sigma, support=3, theta=0, deriv=0, hil=0, vis=0):
 
     if type(sigma)==list and len(sigma)==1:
